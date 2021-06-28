@@ -1,0 +1,183 @@
+/* как появится интернет
+посмотреть подклюдчение стилей для портфолио
+оптимизатор */
+
+:root {
+  --title-color: #212121;
+  --main-color: #757575;
+  --acent-color: #2196f3;
+  --main-text-font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--main-text-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* ============= навигация ========== */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19px;
+}
+
+.logo-web {
+  color: var(--acent-color);
+}
+
+.nav-list,
+.contact {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-list .link {
+  color: var(--title-color);
+}
+.nav-list .link.current {
+  color: var(--acent-color);
+}
+
+.contact .link {
+  color: var(--main-color);
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
+.contact .link:hover,
+.contact .link:focus,
+.address .link:hover,
+.address .link:focus {
+  color: var(--acent-color);
+}
+
+/* ============= Герой ========== */
+
+/* delete */
+.hero {
+  background-color: grey;
+}
+/* !!!! */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--acent-color);
+}
+
+/* ============= контент ========== */
+
+/* секция особености */
+.identity-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.identity-list p {
+  line-height: 1.71;
+}
+
+/* xt */
+.work-title,
+.command-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-color);
+}
+
+.command-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-color);
+}
+
+.command p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* ============= Футер ========== */
+/* del */
+.footer {
+  background-color: grey;
+}
+/* !! */
+
+.footer .logo {
+  color: #ffffff;
+}
+
+.address .link {
+  font-style: normal;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+/* ==========================портфолио=============== */
+
+.btn-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.btn-item:focus,
+.btn-item:hover {
+  color: #fff;
+  background-color: var(--acent-color);
+}
+
+.card-link {
+  color: var(--main-color);
+}
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.card-ftr {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-color);
+}
+
+.card-img {
+  width: 370px;
+  height: 294px;
+}
