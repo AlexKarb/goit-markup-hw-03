@@ -38,7 +38,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 .conteiner {
@@ -54,6 +54,15 @@ body {
 }
 .link {
   text-decoration: none;
+}
+
+.title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-color);
 }
 
 /* ============= навигация ========== */
@@ -114,7 +123,8 @@ body {
   color: var(--main-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list .link:hover,
@@ -126,19 +136,38 @@ body {
   color: var(--acent-color);
 }
 
+.contact-icon {
+  fill: var(--main-color);
+  margin-right: 10px;
+}
+
+.contact .link:hover .contact-icon,
+.contact .link:focus .contact-icon {
+  fill: var(--acent-color);
+}
+
 /* ============= Герой ========== */
 
-/* delete */
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
-/* !!!! */
 
 .hero-title {
   text-align: center;
@@ -167,6 +196,11 @@ body {
   border: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: #188ce8;
 }
 
 /* ============= контент ========== */
@@ -201,19 +235,26 @@ body {
   margin-top: 10px;
 }
 
-/* чем мы занимаемся + Наша команда */
-.work-title,
-.command-title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--title-color);
+.conteiner-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.identity-icon {
+  width: 70px;
+  height: 70px;
 }
 
+/* чем мы занимаемся + Наша команда */
+
 .our-work.section,
-.command.section {
+.command.section,
+.clients.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -244,7 +285,7 @@ body {
   margin-right: 30px;
 }
 .command-list-content {
-  padding: 30px 15px;
+  padding: 30px 32px;
 }
 
 .command-name {
@@ -260,6 +301,64 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.command .social-link-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.command .socail-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #b8afaf;
+}
+
+.command .social-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.socail-link:hover,
+.socail-link:focus {
+  fill: #fff;
+  background-color: var(--acent-color);
+}
+
+/* наши клиенты */
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.clients-list-item:not(:nth-child(6n)) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--acent-color);
+  border-color: var(--acent-color);
 }
 
 /* ============= Футер ========== */
